@@ -12,8 +12,6 @@
         $x = explode('.', $gambar_produk);
         $extensi = strtolower(end($x));
         $file_tmp = $_FILES['gambar_produk']['tmp_name'];
-        // $angka_acak = rand(1,999);
-        // $nama_gambar_baru = $angka_acak.'-'.$gambar_produk;
             if(in_array($extensi, $extensi_diperbolehkan) === true) {
                 move_uploaded_file($file_tmp, 'gambar/'.$gambar_produk);
 

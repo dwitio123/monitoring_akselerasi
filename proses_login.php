@@ -10,7 +10,6 @@
     $cek = mysqli_num_rows($sql);
 
     if ($cek > 0) {
-        session_start();
         $_SESSION['username'] = $username;
         echo "<script>alert('Berhasil login');window.location='index.php';</script>";
     } else {
